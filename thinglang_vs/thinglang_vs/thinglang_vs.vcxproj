@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{72DEA098-958D-4E80-AB4B-FA4246869664}</ProjectGuid>
+    <RootNamespace>thinglangvs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\$(Platform)</OutDir>
+    <TargetName>thinglang</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\$(Platform)</OutDir>
+    <TargetName>thinglang</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\$(Platform)</OutDir>
+    <TargetName>thinglang</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\$(Platform)</OutDir>
+    <TargetName>thinglang</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WIN32;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);X64;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WIN32;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);X64;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\thinglang\foundation\classes\containers\IteratorType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\containers\ListType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\containers\MapType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\exceptions\ExceptionType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\io\console\ConsoleType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\io\filesystem\DirectoryEntryType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\io\filesystem\DirectoryType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\io\filesystem\FileType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\types\BoolType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\types\NumberType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\types\ObjectType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\types\TextType.cpp" />
+    <ClCompile Include="..\..\thinglang\foundation\classes\utilities\TimeType.cpp" />
+    <ClCompile Include="..\..\thinglang\runtime\errors\RuntimeError.cpp" />
+    <ClCompile Include="..\..\thinglang\runtime\execution\Instruction.cpp" />
+    <ClCompile Include="..\..\thinglang\runtime\execution\Program.cpp" />
+    <ClCompile Include="..\..\thinglang\runtime\loader\ProgramReader.cpp" />
+    <ClCompile Include="..\..\thinglang\runtime\main.cpp" />
+    <ClCompile Include="..\..\thinglang\runtime\types\infrastructure\Comparisons.cpp" />
+    <ClCompile Include="..\..\thinglang\runtime\types\infrastructure\ThingInstance.cpp" />
+    <ClCompile Include="..\..\thinglang\runtime\types\infrastructure\ThingType.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\thinglang\foundation\classes\containers\IteratorType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\containers\ListType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\containers\MapType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\exceptions\ExceptionType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\io\console\ConsoleType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\io\filesystem\DirectoryEntryType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\io\filesystem\DirectoryType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\io\filesystem\FileType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\types\BoolType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\types\NumberType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\types\ObjectType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\types\TextType.h" />
+    <ClInclude Include="..\..\thinglang\foundation\classes\utilities\TimeType.h" />
+    <ClInclude Include="..\..\thinglang\include\args.h" />
+    <ClInclude Include="..\..\thinglang\include\dirent.h" />
+    <ClInclude Include="..\..\thinglang\runtime\errors\Aborts.h" />
+    <ClInclude Include="..\..\thinglang\runtime\errors\RuntimeError.h" />
+    <ClInclude Include="..\..\thinglang\runtime\execution\Globals.h" />
+    <ClInclude Include="..\..\thinglang\runtime\execution\Instruction.h" />
+    <ClInclude Include="..\..\thinglang\runtime\execution\Opcodes.h" />
+    <ClInclude Include="..\..\thinglang\runtime\execution\Program.h" />
+    <ClInclude Include="..\..\thinglang\runtime\loader\ProgramReader.h" />
+    <ClInclude Include="..\..\thinglang\runtime\types\infrastructure\Comparisons.h" />
+    <ClInclude Include="..\..\thinglang\runtime\types\infrastructure\ThingInstance.h" />
+    <ClInclude Include="..\..\thinglang\runtime\types\infrastructure\ThingType.h" />
+    <ClInclude Include="..\..\thinglang\runtime\types\interfaces\IndexedInterface.h" />
+    <ClInclude Include="..\..\thinglang\runtime\types\InternalTypes.h" />
+    <ClInclude Include="..\..\thinglang\runtime\utils\Containers.h" />
+    <ClInclude Include="..\..\thinglang\runtime\utils\Formatting.h" />
+    <ClInclude Include="..\..\thinglang\runtime\utils\TypeNames.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
