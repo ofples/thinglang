@@ -5,6 +5,7 @@
 #include <ostream>
 #include <algorithm>
 #include <iterator>
+#include <locale>
 
 #include "../types/infrastructure/ThingInstance.h"
 
