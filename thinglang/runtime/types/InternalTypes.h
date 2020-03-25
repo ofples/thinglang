@@ -18,7 +18,7 @@
 #include "../../foundation/classes/types/TextType.h"
 #include "../../foundation/classes/utilities/TimeType.h"
 
-enum PrimitiveType {
+enum class PrimitiveType {
     TEXT, NUMBER, BOOL
 };
 
