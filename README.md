@@ -12,6 +12,23 @@ thing Program
         Console.print("Hello, world!")
 ```
 
+## Running
+To run your thing program, you must first compile it.
+This can be done by running:
+```
+python3 compile.py <source_file>
+```
+
+The script will write the bytecode to the source file path with the `.tlc` extension.
+
+If you haven't yet, compile the runtime by opening and building the visual studio solution under `thinglang_vs`.
+
+Now, execute the compiled bytecode using the thinglang runtime:
+
+```
+thinglang.exe <target_bytecode_file>
+```
+
 ## Introduction
 At its heart, thinglang closely follows the principles of classic strictly typed programming languages - namely, Java and C# - but attempts to expose a more "Pythonic" syntax on the surface.
 
